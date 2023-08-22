@@ -1,0 +1,65 @@
+body {
+    font-family: 'Dancing Scrypt', cursive;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    align-items: baseline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.container:target {
+    transform: translateY(-60px);
+}
+
+.mascota {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mascota img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}
