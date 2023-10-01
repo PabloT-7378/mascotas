@@ -3,62 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>mascotas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places"></script>
 </head>
 <body>
     <header>
-        <h1>Las Mascotas de la Familia</h1>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/codoacodo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Como perros y gatos
+            </a>            
+            <div class="btn-group ms-auto" role="group" aria-label="Basic outlined example">
+                <a href="index.html" class="btn btn-outline-light">Acerca de ellos</button>
+                <a href="perros.html" class="btn btn-outline-light">Perros</a>
+                <a href="gatos.html" class="btn btn-outline-light">Gatos</a>
+            </div>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#pirata">Pirata</a></li>
-            <li><a href="#lola">Lola</a></li>
-            <li><a href="#pancho">Pancho</a></li>
-            <li><a href="#misha">Misha</a></li>
-            <li><a href="#micu">Micu</a></li>
-        </ul>
-    </nav>
+    <div class="jumbotron jumbotron-fluid" style="background-image: url('/assets/img/baner.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 600px;">
+        <h1 class="display-4 text-primary">¡Bienvenidos a Nuestro Sitio Web!</h1>
+        <p class="lead text-primary">Los perros y los gatos son dos de las mascotas <br>más queridas y populares en todo el mundo, <br>y cada uno tiene características únicas <br>que los hacen especiales para las personas, <br>a tal punto que son considerados miembros de la familia...</p>
+        <div style="position: absolute; bottom: 280px; right: 20px;">
+            <a class="btn btn-secondary btn-lg" href="#razas" role="button">Razas</a>
+            <a class="btn btn-secondary btn-lg" href="#" role="button">Destacados</a>
+        </div>
+    </div>
 
-    <div class="container" id="perros">
-        <h2>Perros</h2>
-        <div class="mascota" id="pirata">
-            <img src="https://nosamisleschiens.fr/wp-content/uploads/2016/09/cocker-anglais-spaniel-1.jpg" alt="Perro 1">
-            <p>Este es Pirata, el mayor tiene 10 años y su pasatiempo es comer.</p>
+    <section>
+        <h2 class="titulo_acerca">Acerca de los Perros y Gatos como Mascotas</h2>
+        <p class="acerca">Ambos perros y gatos tienen mucho que ofrecer como mascotas, y la elección entre uno u otro dependerá de tu estilo de vida, <br>preferencias personales y capacidad para brindarles el cuidado adecuado. Lo más importante es asegurarte de que tu mascota <br>reciba amor, atención y cuidados adecuados para garantizar su felicidad y bienestar.</p>
+        <div class="row">
+            <div class="col-md-6 perros-section p-5">
+                <h3>Perros</h3>
+                <p>Las características de los perros incluyen su lealtad, amistosidad y diversidad de razas. Los perros son conocidos por su capacidad de ser buenos compañeros y protectores de sus dueños.</p>
+                <ul>
+                    <li>Fidelidad y compañía: Los perros son conocidos por su lealtad inquebrantable hacia sus dueños. Siempre están dispuestos a brindar compañía y afecto, lo que los convierte en excelentes compañeros.</li>
+                    <li>Variedad de razas: Existen cientos de razas de perros, desde pequeños chihuahuas hasta grandes daneses. Esto significa que puedes encontrar un perro que se adapte a tu estilo de vida y preferencias.</li>
+                    <li>Entrenabilidad: Los perros son animales muy inteligentes y entrenables. Puedes enseñarles trucos, obediencia básica y más. Son ideales para actividades como el agility y el adiestramiento.</li>
+                    <li>Actividad física: La mayoría de los perros necesitan ejercicio regular, lo que puede motivar a sus dueños a mantenerse activos. Salir a caminar o correr con tu perro es una excelente forma de ejercicio para ambos.</li>
+                    <li>Guardianes y protectores: Muchas razas de perros tienen instintos protectores, lo que los convierte en excelentes guardianes del hogar. Pueden alertarte ante la presencia de extraños.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 gatos-section p-5">
+                <h3>Gatos</h3>
+                <p>Los gatos son independientes, cariñosos y excelentes cazadores. A menudo, los gatos se valoran por su elegancia y personalidad única como mascotas.</p>
+                <ul>
+                    <li>Independencia: Los gatos son animales independientes y no requieren tanta atención constante como los perros. Son ideales para personas con horarios ocupados.</li>
+                    <li>Higiene personal: Los gatos son muy limpios y se asean a sí mismos regularmente. También son conocidos por ser mascotas que no requieren baños frecuentes.</li>
+                    <li>Juego y cariño: Aunque son independientes, los gatos también pueden ser cariñosos y jugar con sus dueños. Los juegos con cuerdas y ratones de juguete son populares.</li>
+                    <li>Excelentes cazadores: Los gatos tienen fuertes instintos de caza y pueden mantener la casa libre de roedores e insectos no deseados.</li>
+                    <li>Silencio: Los gatos son generalmente silenciosos en comparación con los ladridos de los perros, lo que puede ser una ventaja en vecindarios tranquilos.</li>
+                </ul>
+            </div>
         </div>
-        <div class="mascota" id="lola">
-            <img src="https://th.bing.com/th/id/R.29ad5ce31a6a36c0cf96febb28144a8d?rik=4G1kG9JbnhyEsA&riu=http%3a%2f%2fwww.hundefreunde-ich-will-leben.de%2fresources%2fSpaiky-neu-1a.jpg&ehk=YGndPttW%2baRGhjEJ3uLNYG9LAcsamQLJy%2ftGLTSn19E%3d&risl=&pid=ImgRaw&r=0" alt="Perro 2">
-            <p>Ella es Lola, es muy unidad a Pirata andan juntos para todos lados.</p>
-        </div>
-        <div class="mascota" id="pancho">
-            <img src="https://almanimal.com/wp-content/uploads/2019/12/caniche-1000x621.jpg" alt="perro 3">
-            <p>Este es Pancho el toxico de la familia, mientra sus hermanos cuidan la casa el descansa.</p>
-        </div>
-    </div>
-    <div class="container" id="gatos">
-        <h2>Gatos</h2>
-        <div class="mascota" id="misha">
-            <img src="https://i.pinimg.com/736x/8a/14/94/8a14945dab88181d8f4ea8eb6050ac53--antigua-white-cats.jpg" alt="Gato 1">
-            <p>Esta es Misha, la guardiana silenciosa.</p>
-        </div>
-        <div class="mascota" id="micu">
-            <img src="https://neko.kichijoji.gr.jp/wp-content/uploads/images/post/2018/08/20/20180820_08-840x560.jpg" alt="Gato 2">
-            <p>Esta es Micu la que rompe todo.</p>
-        </div>
-    </div>
+    </section>
+
+    <section id="razas">
+        <div class="container container-slider">
+            <h2>Razas de Perros y Gatos</h2>
+            <p>Las razas de perros varían ampliamente en tamaño, temperamento y apariencia debido a la selección y cría selectiva a lo largo de los años. Algunas razas se destacan por su inteligencia y capacidad para trabajar, como el Pastor Alemán y el Border Collie, mientras que otras son conocidas por su amabilidad y lealtad, como el Labrador Retriever y el Golden Retriever.
+            También hay razas más pequeñas y adecuadas para la vida en apartamentos, como el Bulldog Francés y el Pomerania, y razas más grandes y enérgicas, como el Husky Siberiano y el Gran Danés. En términos de apariencia, los perros pueden tener pelajes cortos o largos, y su color y patrón varían ampliamente.<br>
+            Al igual que los perros, las razas de gatos también presentan una gran diversidad en términos de tamaño, pelaje y temperamento. Los gatos siameses tienden a ser sociables y vocalizadores, mientras que los gatos persas tienen pelajes largos y necesitan un cuidado constante. Los Maine Coon son grandes y juguetones, mientras que los gatos Ragdoll son dóciles y relajados cuando los sostienes.
+            Algunas razas de gatos, como los gatos Sphynx, carecen de pelaje por completo, mientras que otras, como los gatos Bengal, tienen pelajes exóticos que se asemejan a animales salvajes. En general, los gatos son conocidos por su independencia y comportamiento en solitario, pero también pueden ser cariñosos y afectuosos con sus dueños. <br>
+            En resumen, tanto en perros como en gatos, hay una amplia variedad de razas con diferentes características físicas y de personalidad, lo que permite a las personas elegir una mascota que se adapte a sus preferencias y estilo de vida.</p>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/razasPerros.jpg" class="d-block w-100" alt="Perro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/razasGatos.jpg" class="d-block w-100" alt="Gato">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>        
+    </section>
+    
     <div class="container">
-        <div>
-            <p>aclaracion: si bien las mascotas son realez, las imagenes son solo ilustrativas</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Refugios</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d419942.68484286824!2d-59.04525673682054!3d-34.68494069169852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srefugios%20para%20mascotas!5e0!3m2!1ses-419!2sar!4v1696193608780!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Registrar una Mascota en Situación de Calle</h2>
+                <form id="registro-form">
+                    <div class="form-group">
+                        <label for="ubicacion">Ubicación:</label>
+                        <input type="text" class="form-control" id="ubicacion" name="ubicacion" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar Registro</button>
+                </form>
+            </div>
         </div>
     </div>
 
-    <footer>
+    <footer class="bg-primary">
         <p>&copy; 2023 Pablo Tapia</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>
