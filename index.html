@@ -16,14 +16,14 @@
     <header>
         <nav class="navbar bg-primary" data-bs-theme="dark">
             <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://phantom-marca.unidadeditorial.es/0416944681aadb1dcc9717e43b978365/resize/1320/f/jpg/assets/multimedia/imagenes/2022/11/20/16689503911908.jpg">
                 <img src="/assets/img/codoacodo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 Como perros y gatos
             </a>            
             <div class="btn-group ms-auto" role="group" aria-label="Basic outlined example">
                 <a href="index.html" class="btn btn-outline-light">Acerca de ellos</button>
-                <a href="perros.html" class="btn btn-outline-light">Perros</a>
-                <a href="gatos.html" class="btn btn-outline-light">Gatos</a>
+                <a href="#razas" class="btn btn-outline-light">Razas</a>
+                <a href="#ayudalos" class="btn btn-outline-light">Ayudalos</a>
             </div>
             </div>
         </nav>
@@ -33,8 +33,7 @@
         <h1 class="display-4 text-primary">¡Bienvenidos a Nuestro Sitio Web!</h1>
         <p class="lead text-primary">Los perros y los gatos son dos de las mascotas <br>más queridas y populares en todo el mundo, <br>y cada uno tiene características únicas <br>que los hacen especiales para las personas, <br>a tal punto que son considerados miembros de la familia...</p>
         <div style="position: absolute; bottom: 280px; right: 20px;">
-            <a class="btn btn-secondary btn-lg" href="#razas" role="button">Razas</a>
-            <a class="btn btn-secondary btn-lg" href="#" role="button">Destacados</a>
+            <a class="btn btn-secondary btn-lg" href="#mis_mascotas" role="button">Mis Mascotas</a>
         </div>
     </div>
 
@@ -67,7 +66,7 @@
         </div>
     </section>
 
-    <section id="razas">
+    <section id="razas" style="margin-top: 20px;">
         <div class="container container-slider">
             <h2>Razas de Perros y Gatos</h2>
             <p>Las razas de perros varían ampliamente en tamaño, temperamento y apariencia debido a la selección y cría selectiva a lo largo de los años. Algunas razas se destacan por su inteligencia y capacidad para trabajar, como el Pastor Alemán y el Border Collie, mientras que otras son conocidas por su amabilidad y lealtad, como el Labrador Retriever y el Golden Retriever.
@@ -96,7 +95,7 @@
         </div>        
     </section>
     
-    <div class="container">
+    <div class="container" id="ayudalos">
         <div class="row">
             <div class="col-md-6">
                 <h4>Refugios</h4>
@@ -118,6 +117,56 @@
 
                     <button type="submit" class="btn btn-primary">Enviar Registro</button>
                 </form>
+            </div>
+        </div>
+    </div>    
+
+    <div class="container" id="mis_mascotas">
+        <h2>Mis Mascotas</h2>
+        <div class="boton-linea">
+            <div class="mascota-button">
+                <button class="btn btn-primary" data-toggle="popover" title="Pirata" data-content="Mascota 1">
+                    Pirata
+                </button>
+                <div class="mascota-description">
+                    <img src="https://nosamisleschiens.fr/wp-content/uploads/2016/09/cocker-anglais-spaniel-1.jpg" alt="Cocker color caramelo">
+                </div>
+            </div>
+            
+            <div class="mascota-button">
+                <button class="btn btn-primary" data-toggle="popover" title="Lola" data-content="Mascota 2">
+                    Lola
+                </button>
+                <div class="mascota-description">
+                    <img src="https://th.bing.com/th/id/R.29ad5ce31a6a36c0cf96febb28144a8d?rik=4G1kG9JbnhyEsA&riu=http%3a%2f%2fwww.hundefreunde-ich-will-leben.de%2fresources%2fSpaiky-neu-1a.jpg&ehk=YGndPttW%2baRGhjEJ3uLNYG9LAcsamQLJy%2ftGLTSn19E%3d&risl=&pid=ImgRaw&r=0" alt="Cocker color negro">
+                </div>
+            </div>
+            
+            <div class="mascota-button">
+                <button class="btn btn-primary" data-toggle="popover" title="Pancho" data-content="Mascota 3">
+                    Pancho
+                </button>
+                <div class="mascota-description">
+                    <img src="https://almanimal.com/wp-content/uploads/2019/12/caniche-1000x621.jpg" alt="Caniche">
+                </div>
+            </div>
+
+            <div class="mascota-button">
+                <button class="btn btn-primary" data-toggle="popover" title="Misha" data-content="Mascota 4">
+                    Misha
+                </button>
+                <div class="mascota-description">
+                    <img src="https://i.pinimg.com/736x/8a/14/94/8a14945dab88181d8f4ea8eb6050ac53--antigua-white-cats.jpg" alt="Gata negra y blanca">
+                </div>
+            </div>
+
+            <div class="mascota-button">
+                <button class="btn btn-primary" data-toggle="popover" title="Miku" data-content="Mascota 5">
+                    Miku
+                </button>
+                <div class="mascota-description">
+                    <img src="https://neko.kichijoji.gr.jp/wp-content/uploads/images/post/2018/08/20/20180820_08-840x560.jpg" alt="Gata blanca y marron claro">
+                </div>
             </div>
         </div>
     </div>

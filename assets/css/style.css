@@ -40,26 +40,6 @@ header {
     padding-right: 30px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 10px;
-    align-items: baseline;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -82,6 +62,47 @@ nav a {
 .mascota img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+.boton-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.mascota-button {
+    position: relative;
+}
+
+#mis_mascotas {
+    margin-top: 20px;
+    background: linear-gradient(to right, #cccccc, #dddddd);
+    width: 100%;
+}
+
+.mascota-description {
+    display: none;
+    position: fixed;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    max-width: 80%;
+}
+
+.mascota-description img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mascota-button:hover .mascota-description {
+    display: block;
 }
 
 footer {
