@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>mascotas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pixelify+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/34a2a56733.js" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places"></script>
+    </head>
+<body>
+    <header>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="https://phantom-marca.unidadeditorial.es/0416944681aadb1dcc9717e43b978365/resize/1320/f/jpg/assets/multimedia/imagenes/2022/11/20/16689503911908.jpg">
+                <img src="assets/img/codoacodo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Como perros y gatos
+            </a>            
+            <div class="btn-group ms-auto" role="group" aria-label="Basic outlined example">
+                <a href="index.html" class="btn btn-outline-light">Acerca de ellos</button>
+                <a href="#razas" class="btn btn-outline-light">Razas</a>
+                <a href="#ayudalos" class="btn btn-outline-light">Ayudalos</a>
+                <a href="#donaciones" class="btn btn-outline-light">Exposicion</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <h2>Entradas para la Exposicion</h2>
+    <div class="dona">
+        <div class="recuadro recuadro1">
+            <h3>Bronce</h3>
+            <p class="descripcion">Donando una bolsa de alimento</p>
+            <p class="porcentaje">15% de descuento</p>
+            <p class="requisito">*Presentar comprobante</p>
+        </div>
+        <div class="recuadro recuadro2">
+            <h3>Plata</h3>
+            <p class="descripcion">Donando dos bolsas de alimento</p>
+            <p class="porcentaje">40% de descuento</p>
+            <p class="requisito">*Presentar comprobante</p>
+        </div>
+        <div class="recuadro recuadro3">
+            <h3>Oro</h3>
+            <p class="descripcion">Donando tres bolsas de alimento o mas</p>
+            <p class="porcentaje">80% de descuento</p>
+            <p class="requisito">*Presentar comprobante</p>
+        </div>
+    </div>
+    <div class="valor_entradas">
+        <h2>Valor de la entrada $500</h2>
+    </div>
+    
+    <div class="custom-container center-form" id="formulario">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="text" class="form-control" id="cantidad" placeholder="cantidad" required>
+                    </div>
+    
+                    <div class="col">
+                        <label for="categoria">Categoria</label>
+                        <select class="form-control" id="categorias">
+                            <option selected>elegir...</option>
+                            <option value="1">Bronce</option>
+                            <option value="2">Plata</option>
+                            <option value="3">Oro</option>
+                        </select>
+                    </div>
+                </div>               
+            </div>
+            <div class="form-group">                
+                <div class="total-pagar">
+                    <p>Total a pagar: $<span id="total-valor">0</span></p>
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <div class="row d-flex justify-content-center">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary mb-2">Refrescar</button>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div><br><br>
+    
+    <footer class="bg-primary">
+        <div class="row">
+            <div class="col text-start text-white ms-5 mt-3">
+                <p>&copy; 2023 Pablo Tapia</p>
+            </div>
+            <div class="col text-end mt-3">
+                <a href="https://ar.linkedin.com" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://es-la.facebook.com/" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=en" class="text-white me-5"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script src="assets/js/formulario.js"></script>
+</body>
+</html>

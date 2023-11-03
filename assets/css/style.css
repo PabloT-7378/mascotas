@@ -108,3 +108,65 @@ header {
 footer {
     text-align: center;
 }
+
+.dona {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.recuadro {
+    width: 200px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.recuadro h3 {
+    font-size: 24px;
+}
+
+.recuadro .descripcion {
+    font-size: 16px;
+}
+
+.recuadro .porcentaje {
+    font-size: 14px;
+    color: green;
+}
+
+.recuadro .requisito {
+    font-size: 14px;
+    color: #D3D3D3;
+}
+
+
+.recuadro1 {
+border-color: #A57164;
+}
+
+.recuadro2 {
+border-color: #C0C0C0;
+}
+
+.recuadro3 {
+border-color: #ffbf00;
+}
+
+.valor_entradas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.center-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-pagar {
+    background-color: #C0C0C0;
+    margin-top: 30px;
+}
